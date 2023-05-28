@@ -1,0 +1,56 @@
+/* Estilos personalizados */
+
+header {
+	background-color: #fff;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	padding: 20px;
+}
+
+main {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+footer {
+	background-color: #f8f9fa;
+	padding: 20px;
+}
+
+.section{
+	text-align: left;
+}
+
+h1{
+	text-align: center;
+}
+
+table{
+	font-family: Arial, Helvetica, sans-serif;
+	border-collapse:collapse, rgb(0, 0, 0);
+	width: 100%;
+
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+
+  img {
+    vertical-align: middle;
+    border-style: none;
+	width: 250px;
+	height: 250px;
+  }
+
+h2 {
+	text-align: center;
+}
+button a{
+	color: rgb(4, 255, 38);
+}
