@@ -6,27 +6,71 @@ from django.shortcuts import render
 #http response,render,redirect.
 
 def index (request):
-    nombre=''
     return render(request,'menu/index.html')
 
-def home(request):
-    nombre='mauricio'
+def raiz(request):
+    return render(request,'botanica/Raiz-Botanica.html')
 
-    contexto={
-        'nom':nombre,
-    }
-    return render(request,'menu/home.html',contexto)
+def recu (request):
+    return render(request,'botanica/Recu.html')
 
-def borgona (request):
-    nombreMascota="Borgoña"
-    edadMascota=2
-    razaMascota="Pitbull"
-    lista=["marron","blanco","negro"]
+def recuperar (request):
+    return render(request,'botanica/Recuperar.html')
 
-    contexto={
-        "nom":nombreMascota,
-        "edad":edadMascota,
-        "raza":razaMascota,
-        "colores":lista
-    }
-    return render(request,'menu/borgona.html',contexto)
+def terminoycondicion (request):
+    return render(request,'botanica/terycondi.html')
+
+def venta (request):
+    return render(request,'botanica/Venta.html')
+
+def masetaterra (request):
+    return render(request,'botanica/masetaTerra.html')
+
+def maceterobio (request):
+    return render(request,'botanica/maceteroBio.html')
+
+def macetero1 (request):
+    return render(request,'botanica/macetero1.html')
+    
+def macetabonsai (request):
+    return render(request,'botanica/maceteroBonsai.html')
+
+def macetaexter (request):
+    return render(request,'botanica/maceExter.html')
+
+def ini (request):
+    return render(request,'botanica/ini.html')
+
+def crear_usu (request):
+    return render(request,'botanica/Crear_usu.html')
+
+def crear_admi (request):
+    return render(request,'botanica/Crear_admi.html')
+
+def contacto (request):
+    return render(request,'botanica/Contacto.html')
+
+def compralista (request):
+    return render(request,'botanica/CompraLista.html')
+
+def carrito (request):
+    return render(request,'botanica/carrito.html')
+
+def carrito_terracota (request):
+    return render(request,'botanica/Carrito_terracota.html')
+
+def carrito_bonsai (request):
+    return render(request,'botanica/Carrito_bonsai.html')
+
+def carrito_biodegradable (request):
+    return render(request,'botanica/Carrito_biodegradable.html')
+
+def agregar_editar_eliminar (request):
+    return render(request,'botanica/agregar_editar_eliminar.html')
+
+def acercade (request):
+    return render(request,'botanica/acercade.html')
+
+def metodo_pago (request):
+    return render(request,'botanica/A_metodo_pago.html')
+
