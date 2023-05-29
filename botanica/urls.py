@@ -2,7 +2,7 @@
 #solo que todos los demas no se pasan a django.
 #,include
 from django.contrib import admin
-from django.urls import path
+from django.urls import path ,include
 from .views import index,raiz,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
 from .views import macetero1,macetabonsai,macetaexter,ini,crear_usu,crear_admi,contacto,compralista
 from .views import carrito,carrito_terracota,carrito_bonsai,carrito_biodegradable,agregar_editar_eliminar
