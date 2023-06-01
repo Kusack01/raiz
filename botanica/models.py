@@ -1,18 +1,20 @@
 from django.db import models
 
 # Create your models here.
-
-class direccion(models.Model):
-    idDireccion=models.CharField(max_length=30,primary_key=True)
-    calle=models.CharField(max_length=5)
-    numero=models.IntegerField(5)
-    idComuna=models.ForeignKey()
-    idUsuario=models.ForeignKey()
-    
-class comuna(models.Model):
+class Comuna(models.Model):
     idComuna=models.CharField(max_length=10,primary_key=True)
     nombre=models.CharField(max_length=10)
     idRegion=models.ForeignKey()
+
+    
+class Direccion(models.Model):
+    idDireccion=models.CharField(max_length=30,primary_key=True)
+    calle=models.CharField(max_length=5)
+    numero=models.IntegerField(5)
+    comuna=models.ForeignKey(Comuna,on_delete=models.CASCADE)
+    idUsuario=models.ForeignKey()
+    
+
     
 class region(models.Model):
     idRegion=models.CharField(max_length=15,primary_key=True)

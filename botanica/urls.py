@@ -3,14 +3,13 @@
 #,include
 from django.contrib import admin
 from django.urls import path ,include
-from .views import index,raiz,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
+from .views import raiz,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
 from .views import macetero1,macetabonsai,macetaexter,ini,crear_usu,crear_admi,contacto,compralista
 from .views import carrito,carrito_terracota,carrito_bonsai,carrito_biodegradable,agregar_editar_eliminar
 from .views import acercade,metodo_pago
 
 urlpatterns = [
-    path('index',index,name="index"),
-    path('Raiz',raiz,name="raiz"),
+    path('',raiz,name="raiz"),
     path('Venta',venta,name="venta"),
     path('Recu',recu,name="recu"),
     path('Recuperar',recuperar,name="recuperar"),
