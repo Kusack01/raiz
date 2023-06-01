@@ -1,17 +1,15 @@
 from django.contrib import admin
-from .models import direccion,comuna,region,usuario,venta,rol,pregunta,detalle
-from .models import producto,categoria,foto
-
+from .models import Region, Rol, Pregunta, Categoria, Producto, Comuna, Direccion, Usuario, Venta, Detalle, Foto
 # Register your models here.
 
-admin.site.register(direccion)
-admin.site.register(comuna)
-admin.site.register(region)
-admin.site.register(usuario)
-admin.site.register(venta)
-admin.site.register(rol)
-admin.site.register(pregunta)
-admin.site.register(detalle)
-admin.site.register(producto)
-admin.site.register(categoria)
-admin.site.register(foto)
+admin.site.register(Region)
+admin.site.register(Rol)
+admin.site.register(Pregunta)
+admin.site.register(Categoria)
+admin.site.register(Producto)
+admin.site.register(Comuna)
+admin.site.register(Direccion)
+admin.site.register(Usuario)
+admin.site.register(Venta)
+admin.site.register(Detalle)
+admin.site.register(Foto)
