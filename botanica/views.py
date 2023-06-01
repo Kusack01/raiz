@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.contrib.auth.models import User
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth import authenticate,login, logout
 
 # Create your views here.
 # Se puede crear una o ms vistas por cada html y al menos una url por vista.
