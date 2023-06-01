@@ -52,8 +52,9 @@ class Usuario(models.Model):
     correo = models.CharField(max_length=30)
     clave = models.CharField(max_length=15)
     idRol = models.ForeignKey(Rol, on_delete=models.CASCADE)
-    idPregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
-    idRespuesta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
+    idPregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE, related_name='pregunta_usuario_set')
+    idRespuesta = models.ForeignKey(Pregunta, on_delete=models.CASCADE, related_name='respuesta_usuario_set')
+
 
 
 class Venta(models.Model):
