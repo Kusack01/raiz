@@ -5,14 +5,12 @@ from django.shortcuts import render
 #puede manipular request , urls y 
 #http response,render,redirect.
 
-def index (request):
-    return render(request,'menu/index.html')
 
 def raiz(request):
     return render(request,'botanica/Raiz-Botanica.html')
 
 def recu (request):
-    return render(request,'botanica/Recu.html')
+    return render(request,'botanica/Recu.admin.html')
 
 def recuperar (request):
     return render(request,'botanica/Recuperar.html')
