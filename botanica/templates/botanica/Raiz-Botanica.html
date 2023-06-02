@@ -4,7 +4,7 @@
 	{% load static %}
 	<meta charset="UTF-8">
 	<title>Raiz Botanica</title>
-	<link rel="icon" type="image/jpg" href="{% static 'core/Imagenes/Logo Circular Floral Rosa.png' %}">
+	<link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
 	<!-- CSS de Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<!-- CSS personalizado -->
@@ -120,8 +120,8 @@
 <p>¿Eres nuevo en nuestra tienda?</p>
 <p>Para poder comprar necesitas crear una cuenta en nuestro sistema</p>
 <h2>Abajo encontraras un boton el cual al clickear te llevara para poder crear la cuenta</h2>
-<button><a href="Crear_usu.html">Cliente</a></button>
-<button><a href="Crear_admi.html">administrador</a></button>
+<button><a href="{% url 'crear_usu' %}">Cliente</a></button>
+<button><a href="{% url 'crear_admi' %}">administrador</a></button>
 </body>
 </html>
 	

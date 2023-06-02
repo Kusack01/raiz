@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar Tarjeta</title>
-    <link rel="icon" type="image/jpg" href="{% static 'core/Imagenes/Logo Circular Floral Rosa.png' %}">
+    <link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static 'botanica/css/Agrega.css' %}">
 </head>
@@ -19,9 +19,9 @@
     <h2>compras</h2>
     <h5>Order #0101</h5>
     <ul class='order-list'>
-      <li><img src=Img/Calathea.jpg><h4>Calathea</h4><h5>$12.000</h5></li>
-      <li><img src='Img/Maceta bonsai.jpg'><h4>Macetero Bonsai</h4><h5>$7.500</h5></li>
-      <li><img src='Img/Macetero interior.jpg'><h4>Macetero de interior</h4><h5>$5.000</h5></li>
+      <li><img src={% static 'core/imagenes/Calathea.jpg' %}><h4>Calathea</h4><h5>$12.000</h5></li>
+      <li><img src={% static 'core/imagenes/Maceta_bonsai.jpg' %}><h4>Macetero Bonsai</h4><h5>$7.500</h5></li>
+      <li><img src={% static 'core/imagenes/Macetero_interior.jpg' %}><h4>Macetero de interior</h4><h5>$5.000</h5></li>
     </ul>
     <h5>Envio</h5><h4>$1.500</h4>
     <h5 class='total'>Total</h5><h1>$26.000</h1>
@@ -135,6 +135,6 @@
 </div>
 
 <div class='icon-credits'>Outlined icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> & <a href="http://www.flaticon.com/authors/abhimanyu-rana" title="Abhimanyu Rana">Abhimanyu Rana</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-<script src="Js/agrega.js"></script>
+<script src="{% static 'botanica/Js/agrega.js' %}"></script>
 </body>
 </html>
