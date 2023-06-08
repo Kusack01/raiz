@@ -7,11 +7,12 @@ from django.views.decorators.csrf import csrf_exempt
 from botanica.models import Region, Rol, Pregunta, Categoria,Producto,Comuna,Direccion,Usuario,Venta,Detalle
 from prueba.serializers import PruebaSerializers
 # Create your views here.
-
+@csrf_exempt
+@api_view(['GET','POST','DELETE'])
 def lista_region(request):
     if request.method =='GET':
-        Region = Region.objects.all()
-        serializer = PruebaSerializers(Region,many=True)
+        region = Region.objects.all()
+        serializer = PruebaSerializers(region,many=True)
         return Response(serializer.data)
     elif request.method =='POST':
         data = JSONParser().parse(request)

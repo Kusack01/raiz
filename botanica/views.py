@@ -9,7 +9,7 @@ from django.contrib.auth import authenticate,login, logout
 #http response,render,redirect.
 
 
-def raiz(request):
+def raiz2(request):
     return render(request,'botanica/Raiz-Botanica.html')
 
 def recu (request):

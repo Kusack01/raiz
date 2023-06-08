@@ -2,14 +2,14 @@
 #solo que todos los demas no se pasan a django.
 #,include
 from django.contrib import admin
-from django.urls import path ,include
-from .views import raiz,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
+from django.urls import path
+from .views import raiz2,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
 from .views import macetero1,macetabonsai,macetaexter,ini,crear_usu,crear_admi,contacto,compralista
 from .views import carrito,carrito_terracota,carrito_bonsai,carrito_biodegradable,agregar_editar_eliminar
 from .views import acercade,metodo_pago
 
 urlpatterns = [
-    path('',raiz,name="raiz"),
+    path('',raiz2,name="raiz2"),
     path('Venta/',venta,name="venta"),
     path('Recu/',recu,name="recu"),
     path('Recuperar/',recuperar,name="recuperar"),
@@ -31,5 +31,5 @@ urlpatterns = [
     path('AgregarEditarEliminar/',agregar_editar_eliminar,name="agregar_editar_eliminar"),
     path('Acercade/',acercade,name="acercade"),
     path('MetododePago/',metodo_pago,name="metodo_pago"),
-    path('',include('prueba.urls')),
+    
 ]

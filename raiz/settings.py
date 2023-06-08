@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'botanica',
     'rest_framework',
     'prueba',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -132,4 +133,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
