@@ -20,9 +20,9 @@
         <input class="controls" type="text" name="apellido" id="apellidos" placeholder="Ingrese sus apellidos">
         <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
         <input class="controls" type="password" name="Contraseña" id="passwords" placeholder="Ingrese su Contraseña">
-        <p>Estoy de acuerdo con: <a href="terycondi.html">Terminos y condiciones</a></p>
+        <p>Estoy de acuerdo con: <a href="{% url 'terminoycondicion' %}">Terminos y condiciones</a></p>
         <input class="botons" type="submit" value="Registrar">
-        <p><a href="ini.html">¿Ya tienes cuenta en nuestro sistema?</a></p>
+        <p><a href="{% url 'ini' %}">¿Ya tienes cuenta en nuestro sistema?</a></p>
     </section>
 
 
