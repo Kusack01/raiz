@@ -30,7 +30,7 @@
 		        <a class="nav-link" href="{% url 'contacto' %}">Contacto</a>
 		      </li>
 			  <li class="nav-item active">
-		        <a class="nav-link" href="{% url 'raiz2' %}">Cuenta</a>
+		        <a class="nav-link" href="{% url 'crear_usu' %}">Cuenta</a>
 		      </li>
 			  <li class="nav-item active">
 		        <a class="nav-link" href="{% url 'venta' %}">Productos</a>
@@ -71,7 +71,7 @@
 				<p class="card-text">Macetero Biodegradable.</p>
 				<div class="d-flex justify-content-between align-items-center">
 				  <div class="btn-group">
-					<button type="button" class="btn btn-sm btn-outline-secondary"><a href="carrito_biodegradable.html">Comprar</a></button>
+					<button type="button" class="btn btn-sm btn-outline-secondary"><a href="{% url 'carrito_biodegradable' %}">Comprar</a></button>
 					<button type="button" class="btn btn-sm btn-outline-secondary"><a href="maceteroBio.html">Ver Mas</a></button>
 				  </div>
 				  <small class="text-muted">$5.000</small>
