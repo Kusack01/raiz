@@ -13,12 +13,12 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6 offset-md-3 text-center">
-                <img src="{% static 'core/imagenes/succes.png' %}" alt="Orden de compra exitosa" class="img-fluid">
+                <img src="{% static 'botanica/imagenes/succes.png' %}" alt="Orden de compra exitosa" class="img-fluid">
                 <h1 class="mt-5">¡Gracias por tu compra!</h1>
                 <p class="mt-4">Tu orden de compra ha sido procesada con éxito.</p>
                 <p>Tu orden de compra es la siguiente: #01010101</p>
                 <p>Recibirás un correo electrónico con los detalles de tu compra.</p>
-                <a href="Raiz-Botanica.html" class="btn btn-primary mt-4">Volver a la página principal</a>
+                <a href="{% url 'raiz2' %}" class="btn btn-primary mt-4">Volver a la página principal</a>
             </div>
         </div>
     </div>
