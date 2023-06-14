@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.oracle',
         'NAME': '127.0.0.1:1521/orcl',
         'USER': 'Raizbotanica',
-        'PASSWORD': 'botanica2023',
+        'PASSWORD': 'Botanica2023',
         'TEST': {
             'USER': 'default_test',
             'TBLSPACE': 'default_test_tbls',
