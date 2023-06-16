@@ -47,6 +47,6 @@ body {
   }
   
   body{
-    background-image: url("{% static 'imagenes/Grow Lettuce in Winter.jpg' %}");
+    background-image: url("{% static 'botanica/imagenes/Grow Lettuce in Winter.jpg' %}");
     background-size: cover;
 }

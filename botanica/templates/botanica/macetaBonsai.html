@@ -45,9 +45,9 @@
 		</nav>
 	</header>
   <div class="row">
-    <div class="col-md-4"><img src="{% static 'botanica/imagenes/bonsai/maseta_bonsai_tipo_1.jpg' %}" alt=""></div>
-    <div class="col-md-4"><img src="{% static 'botanica/imagenes/bonsai/maseta_bonsai_tipo_2.jpg' %}" alt=""></div>
-    <div class="col-md-4"><img src="{% static 'botanica/imagenes/bonsai/maseta_bonsai_tipo_3.jpg' %}" alt=""></div>
+    <div class="col-md-4"><img src="{% static 'botanica/imagenes/maseta_bonsai_tipo_1.jpg' %}" alt=""></div>
+    <div class="col-md-4"><img src="{% static 'botanica/imagenes/maseta_bonsai_tipo_2.jpg' %}" alt=""></div>
+    <div class="col-md-4"><img src="{% static 'botanica/imagenes/maseta_bonsai_tipo_3.jpg' %}" alt=""></div>
   </div>
   <br>
   <br>
@@ -60,7 +60,7 @@
     temperaturas que bordean los 1.150 grados.</div>
     <div class="col-md-6"><h4 style="margin-top: 5%;">Precio</h4>
     <h6 style="margin-top: 1%;">CLP: 14.990</h6>
-    <form action="Carrito.html" method="get">
+    <form action="{% url 'carrito' %}" method="get">
         <button class="button button1" type="submit" name="add"> Agregar al carrito</button>
     </form>
     </div>

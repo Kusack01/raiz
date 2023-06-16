@@ -14,14 +14,14 @@
 
 <body>
     
-    <img src="{% static 'core/imagenes/macetero Exterior.jpg' %}" alt="Macetero" class="tamanio_de_imagen">
+    <img src="{% static 'botanica/imagenes/macetero Exterior.jpg' %}" alt="Macetero" class="tamanio_de_imagen">
     <h3>Macetero para Exteriores</h3>
     Esta maceta de plástico cuenta con un original acabado en relieve en 3D. Su altura la hace perfecta para colocarla
     al lado de puertas o de vallas.
 
     <h4 style="margin-top: 5%;">Precio</h4>
     <h4 style="margin-top: 1%;">CLP: 54.990</h4>
-    <form action="Carrito.html" method="get">
+    <form action="{% url 'macetaexter' %}" method="get">
         <button class="button button1" type="submit" name="add"> Agregar al carrito</button>
     </form>
 

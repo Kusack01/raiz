@@ -34,7 +34,7 @@ def macetero1 (request):
     return render(request,'botanica/macetero1.html')
     
 def macetabonsai (request):
-    return render(request,'botanica/maceteroBonsai.html')
+    return render(request,'botanica/macetaBonsai.html')
 
 def macetaexter (request):
     return render(request,'botanica/maceExter.html')
