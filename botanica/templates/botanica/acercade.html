@@ -1,20 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-{% load static %}
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca</title>
-    <link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
-    <link rel="stylesheet" href="{% static 'botanica/css/acerca.css' %}">
+  {% load static %}
+  <title>Acerca de la tienda</title>
+  <link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'botanica/css/acerca.css' %}">
 </head>
+
 <body>
-    <section id="about-us">
-        <div class="container">
-          <h2>Acerca de nosotros</h2>
-          <p class="lead">Bienvenidos a nuestro sitio web. Somos una empresa dedicada a ofrecer productos y servicios de alta calidad a nuestros clientes.</p>
-        </div>
-      </section>
+  <div class="container">
+    <h1>Acerca de la Tienda y sus Dueños</h1>
+    <p>Raiz Botanica es una tienda especializada en la venta de productos organicos como lo son plantas entre otras.</p>
+    <p>Somos una tienda especializada en la venta de productos y despacho directo a tu hogar</p>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Dueños</th>
+          <th>Descripción</th>
+          <th>Foto</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Donkey Kong</td>
+          <td>Donkey es uno de los dueños de la tienda. Tiene experiencia en el ambito como jardinero y el cuidador de las plantas</td>
+          <td><img src="{% static 'botanica/imagenes/Dk.jpg' %}" alt="Foto dueño 1" style="max-width: 100px;"></td>
+        </tr>
+        <tr>
+          <td>Woody</td>
+          <td>Woody es el segundo dueño el cual es un juguete que se mueve cuando tu no estas, si estas presente no lo hara</td>
+          <td><img src="{% static 'botanica/imagenes/Woody.jpg' %}" alt="Foto dueño 2" style="max-width: 100px;"></td>
+        </tr>
+        <tr>
+          <td>Spider-Man</td>
+          <td>Spiderman es el Dueño general de la tienda,pues el esta salvando la ciudad mientras deja a Donkey cuidando la tienda.</td>
+          <td><img src="{% static 'botanica/imagenes/spiderman.jpg' %}" alt="Foto dueño 3" style="max-width: 100px;"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
