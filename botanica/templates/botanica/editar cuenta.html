@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+  <title>Editar Cuenta</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% static 'botanica/css/edita_cuenta' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Editar Cuenta</h1>
+    <form method="post" action="{% url 'editar_cuenta' %}">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" value="{{ usuario.nombre }}">
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" value="{{ usuario.email }}">
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+  </div>
+</body>
+</html>

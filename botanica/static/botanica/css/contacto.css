@@ -9,3 +9,8 @@ img {
     height: 120px;
     width: 120px;
 }
+
+body {
+  background-image: url("/static/botanica/imagenes/Logo Circular Floral Rosa.png");
+  background-size: cover;
+}
