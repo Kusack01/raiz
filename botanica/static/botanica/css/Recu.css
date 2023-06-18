@@ -27,9 +27,9 @@ body {
   .btn {
     width: 100%;
   }
-  body{
-    background-image: url('../Img/Grow\ Lettuce\ in\ Winter.jpg');
-}
-
+  body {
+    background-image: url("/static/botanica/imagenes/Logo Circular Floral Rosa.png");
+    background-size: cover;
+  }
 
 
