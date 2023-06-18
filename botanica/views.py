@@ -90,4 +90,7 @@ def editar_cuenta(request):
 
         return redirect('perfil')
 
-    return render(request, 'editar_cuenta.html', {'usuario': usuario})
+    return render(request, 'botanica/editar_cuenta.html', {'usuario': usuario})
+
+def codigo_recuperacion(request):
+    return render(request,'botanica/codigo_recuperacion.html')
