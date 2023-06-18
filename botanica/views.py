@@ -77,7 +77,7 @@ def acercade (request):
 def metodo_pago (request):
     return render(request,'botanica/A_metodo_pago.html')
 
-def editar_cuenta(request):
+def editarcuenta(request):
     usuario = Usuario.objects.get(id=request.user.id)
 
     if request.method == 'POST':
