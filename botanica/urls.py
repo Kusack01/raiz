@@ -6,7 +6,8 @@ from django.urls import path
 from .views import raiz2,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
 from .views import macetero1,macetabonsai,macetaexter,ini,crear_usu,crear_admi,contacto,compralista
 from .views import carrito,carrito_terracota,carrito_bonsai,carrito_biodegradable,agregar_editar_eliminar
-from .views import acercade,metodo_pago
+from .views import acercade,metodo_pago,editar_cuenta
+from .import views 
 
 urlpatterns = [
     path('',raiz2,name="raiz2"),
@@ -31,5 +32,6 @@ urlpatterns = [
     path('AgregarEditarEliminar/',agregar_editar_eliminar,name="agregar_editar_eliminar"),
     path('Acercade/',acercade,name="acercade"),
     path('MetododePago/',metodo_pago,name="metodo_pago"),
-    
+    path('cuenta/editar/', views.editar_cuenta, name='editar_cuenta'),
+
 ]

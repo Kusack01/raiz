@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.contrib.auth.hashers import check_password
 from django.contrib.auth import authenticate,login, logout
+from .models import Usuario
+from django.shortcuts import render, redirect
 
 # Create your views here.
 # Se puede crear una o ms vistas por cada html y al menos una url por vista.
@@ -75,3 +77,17 @@ def acercade (request):
 def metodo_pago (request):
     return render(request,'botanica/A_metodo_pago.html')
 
+def editar_cuenta(request):
+    usuario = Usuario.objects.get(id=request.user.id)
+
+    if request.method == 'POST':
+        nombre = request.POST.get('nombre')
+        email = request.POST.get('email')
+
+        usuario.nombre = nombre
+        usuario.email = email
+        usuario.save()
+
+        return redirect('perfil')
+
+    return render(request, 'editar_cuenta.html', {'usuario': usuario})

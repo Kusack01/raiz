@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url('../IMG/Grow\ Lettuce\ in\ Winter.jpg');
-}
+body {
+    background-image: url("/static/botanica/imagenes/Logo Circular Floral Rosa.png");
+    background-size: cover;
+  }
 
 .form-register{
     width: 400px;
