@@ -32,7 +32,7 @@ urlpatterns = [
     path('AgregarEditarEliminar/',agregar_editar_eliminar,name="agregar_editar_eliminar"),
     path('Acercade/',acercade,name="acercade"),
     path('MetododePago/',metodo_pago,name="metodo_pago"),
-    path('cuentaeditar/',editar_cuenta, name='editar cuenta'),
+    path('cuentaeditar/',views.editar_cuenta, name='editar cuenta'),
     path('codigorecuperacion/',codigo_recuperacion,name="codigo_recuperacion")
 
 ]
