@@ -32,6 +32,6 @@ urlpatterns = [
     path('AgregarEditarEliminar/',agregar_editar_eliminar,name="agregar_editar_eliminar"),
     path('Acercade/',acercade,name="acercade"),
     path('MetododePago/',metodo_pago,name="metodo_pago"),
-    path('cuenta/editar/', views.editar_cuenta, name='editar_cuenta'),
+    path('cuentaeditar/', views.editar_cuenta, name='editar_cuenta'),
 
 ]
