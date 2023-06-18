@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+  <title>Formulario de Cambio de Contraseña</title>
+  <link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
+  <link rel="stylesheet" href="{% static 'botanica/css/codigo.css' %}">
+</head>
+<body>
+
+<div class="container">
+  <h2>Formulario de Cambio de Contraseña</h2>
+  <h2>Se le a enviado un correo con el codigo</h2>
+  <form id="cambio-contrasena-form">
+    <div class="form-group">
+      <label for="codigo">Código:</label>
+      <input type="text" class="form-control" id="codigo" placeholder="Ingresa tu código" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="{% static 'botanica/js/codigo.js'%}"></script>
+
+</body>
+</html>
