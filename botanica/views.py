@@ -12,7 +12,7 @@ from django.shortcuts import render, redirect
 
 
 def raiz2(request):
-    return render(request,'botanica/Raiz-Botanica.html')
+    return render(request,'botanica/plantilla2.html')
 
 def recu (request):
     return render(request,'botanica/Recu.admin.html')
@@ -77,8 +77,8 @@ def acercade (request):
 def metodo_pago (request):
     return render(request,'botanica/A_metodo_pago.html')
 
-def editarcuenta(request):
-    usuario = Usuario.objects.get(id=request.user.id)
+def editar_cuenta(request):
+    usuario = Usuario.objects.get(idUsuario=request.user.id)
 
     if request.method == 'POST':
         nombre = request.POST.get('nombre')

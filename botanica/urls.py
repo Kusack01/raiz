@@ -6,7 +6,7 @@ from django.urls import path
 from .views import raiz2,venta,recu,recuperar,terminoycondicion,masetaterra,maceterobio
 from .views import macetero1,macetabonsai,macetaexter,ini,crear_usu,crear_admi,contacto,compralista
 from .views import carrito,carrito_terracota,carrito_bonsai,carrito_biodegradable,agregar_editar_eliminar
-from .views import acercade,metodo_pago,editarcuenta,codigo_recuperacion
+from .views import acercade,metodo_pago,editar_cuenta,codigo_recuperacion
 from .import views 
 
 urlpatterns = [
