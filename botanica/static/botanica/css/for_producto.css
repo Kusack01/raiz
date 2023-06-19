@@ -1,0 +1,14 @@
+/* Estilos adicionales para personalizar el formulario */
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+body {
+    background-image: url("/static/botanica/imagenes/Logo Circular Floral Rosa.png");
+    background-size: cover;
+  }
