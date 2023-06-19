@@ -78,7 +78,7 @@ def metodo_pago (request):
     return render(request,'botanica/A_metodo_pago.html')
 
 def editar_cuenta(request):
-    usuario = Usuario.objects.get(idUsuario=request.user.id)
+    usuario = Usuario.objects.get(id=request.user.id)
 
     if request.method == 'POST':
         nombre = request.POST.get('nombre')
