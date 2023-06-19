@@ -94,3 +94,9 @@ def editar_cuenta(request):
 
 def codigo_recuperacion(request):
     return render(request,'botanica/codigo_recuperacion.html')
+
+def form_usuario(request):
+    return render(request,'botanica/form_usuario.html')
+
+def form_producto(request):
+    return render(request,'botanica/form_producto.html')
