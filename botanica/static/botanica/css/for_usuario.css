@@ -23,4 +23,8 @@ label {
   input[type="submit"]:hover {
     background-color: #45a049;
   }
-  
+
+  body {
+    background-image: url("/static/botanica/imagenes/Logo Circular Floral Rosa.png");
+    background-size: cover;
+  }
