@@ -12,7 +12,7 @@ from django.shortcuts import render, redirect
 
 
 def raiz2(request):
-    return render(request,'botanica/Raiz-Botanica.html')
+    return render(request,'botanica/plantilla2.html')
 
 def recu (request):
     return render(request,'botanica/Recu.admin.html')
