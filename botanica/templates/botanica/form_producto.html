@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Productos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="icon" type="image/jpg" href="{% static 'botanica/imagenes/Logo Circular Floral Rosa.png' %}">
+    <link rel="stylesheet" href="{% static 'botanica/css/for_productos.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario</h1>
+        <form id="productForm">
+            <div class="form-group">
+                <label for="idProducto">ID Producto</label>
+                <input type="text" class="form-control" id="idProducto" name="idProducto" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio</label>
+                <input type="text" class="form-control" id="precio" name="precio" required>
+            </div>
+            <div class="form-group">
+                <label for="stock">Stock</label>
+                <input type="text" class="form-control" id="stock" name="stock" required>
+            </div>
+            <div class="form-group">
+                <label for="idCategoria">ID Categoría</label>
+                <input type="text" class="form-control" id="idCategoria" name="idCategoria" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'botanica/js/for_productos.js'%}"></script>
+</body>
+</html>
