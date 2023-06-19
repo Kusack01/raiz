@@ -10,3 +10,4 @@ class ProductoForm(ModelForm):
 class UsuarioForm(ModelForm):
     class meta:
         model:Usuario
+        fields=['idUsuario','rut','nombre','apellido','telefono','correo','clave']
